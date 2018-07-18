@@ -1,0 +1,98 @@
+@import "./settings.less";
+.@{face-header-prefix} {
+    background-color: #525a6f;
+    background: linear-gradient(#525a6f, #484f61, #484f61);
+    border-bottom:1px solid #222;
+    color:white;
+    &-inner {
+        display: flex;
+        max-width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+        &:after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+    }
+    &-logo,
+    &-nav,
+    &-tool {
+        padding-top: .5em;
+        padding-bottom: .5em;
+        &-item {
+            outline: none;
+            &-icon {
+                color:#c1cbda;
+            }
+            img&-icon {
+                height: 1.4em;
+                vertical-align: middle;
+                margin-top: -.2em;
+            }
+        }
+    }
+    &-nav,
+    &-tool {
+        line-height: 2em;
+        &-item {
+            margin-left: .2em;
+            margin-right: .2em;
+            color:inherit;
+            text-decoration: none;
+        }
+    }
+
+    &-nav {
+        flex: auto;
+        text-align: center;
+        &-item {
+            outline: none;
+            padding-left: .5em;
+            padding-right: .5em;
+            margin-left: .3em;
+            margin-right: .3em;
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px solid transparent;
+            margin-bottom: -1px;
+            &-icon {
+
+            }
+        }
+        &-item:focus {
+            outline: none;
+        }
+        &-item:hover,
+        &-item--on {
+            outline: none;
+            background-color: rgba(255,255,255,.15);
+            border-radius: .1em;
+            &-icon {
+
+            }
+        }
+    }
+    &-logo {
+        flex:initial;
+        padding-left: 1em;
+        margin-right: 1em;
+        &-photo {
+            height: 2em;
+            vertical-align: middle;
+        }
+        &-title {
+
+        }
+    }
+    &-tool {
+        flex:initial;
+        padding-right: 1em;
+        text-align: right;
+        &-item {
+            &-icon {
+
+            }
+        }
+    }
+}

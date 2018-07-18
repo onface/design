@@ -4,6 +4,7 @@
         "s": "cd docs && ../node_modules/serve/bin/serve.js -l 2000"
     },
     "devDependencies": {
-        "fis-parser-less-2.x": "^0.1.4"
+        "fis-parser-less-2.x": "^0.1.4",
+        "serve": "^9.2.0"
     }
 }
