@@ -174,15 +174,19 @@ var data = [
     "music/share.svg",
     "music/upload.svg"
 ]
+let path = './'
+if (!/(index\.html)/.test(location.pathname) && location.pathname[location.pathname-1] !== '/') {
+     path = './media/'
+}
 data.forEach(function (item) {
     if (/@/.test(item)) {
         document.write('<h2>' + item + '</h2>')
         return
     }
-    var path = __uri('./index.html').replace(/index\.html$/,'')
     var url = path + item
     document.write('<a href="' + url +'" class="item" ><img src="' + url +'" /></a>')
 })
+
 </script>
 </body>
 </html>
