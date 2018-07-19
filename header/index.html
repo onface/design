@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>header</title>
+    <link rel="stylesheet" href="/element/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/face-icon@0.1.1/lib/index.css" />
+    <link rel="stylesheet" href="/header/index.css" />
+</head>
+<body>
+    <!-- face-header--nav-show -->
+    <div class="face-header">
+        <div class="face-header-inner">
+            <a href="/" class="face-header-logo">
+                <img src="https://onface.github.io/design/media/onface/logo.svg" alt="" class="face-header-logo-photo">
+                <span class="face-header-logo-title"></span>
+            </a>
+            <span class="face-header-navSwitch">
+                <span class="face-header-navSwitch-open fi fi-bars"></span>
+                <span class="face-header-navSwitch-close fi fi-close"></span>
+            </span>
+            <div class="face-header-nav">
+                <a href="#" class="face-header-nav-item">
+                    <img src="https://onface.github.io/design/media/cute/computer.svg" alt="" class="face-header-nav-item-icon" />
+                    首页
+                </a>
+                <a href="#" class="face-header-nav-item face-header-nav-item--on">
+                    <img src="https://onface.github.io/design/media/cute/project.svg" alt="" class="face-header-nav-item-icon" />
+                    产品
+                </a>
+                <a href="#" class="face-header-nav-item">
+                    <img src="https://onface.github.io/design/media/cute/email.svg" alt="" class="face-header-nav-item-icon" />
+                    邮件
+                </a>
+                <a href="#" class="face-header-nav-item">
+                    <img src="https://onface.github.io/design/media/cute/settings.svg" alt="" class="face-header-nav-item-icon" />
+                    设置
+                </a>
+            </div>
+            <div class="face-header-tool">
+                <!-- <a href="#" class="face-header-tool-item">
+                    <img src="./media/user.svg" alt="" class="face-header-tool-item-icon" />
+                    <span class="face-header-tool-item-label">Admin</span>
+                </a> -->
+                <a href="#" class="face-header-tool-item">
+                    <img src="https://onface.github.io/design/media/onface/logout.svg" alt="" class="face-header-tool-item-icon" />
+                    <span class="face-header-tool-item-label">退出</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="face-header-sub">
+        <div class="face-header-sub-inner">
+            <div class="face-header-sub-nav">
+                <a href="#" class="face-header-sub-nav-item">新建</a>
+                <a href="#" class="face-header-sub-nav-item face-header-sub-nav-item--on">统计</a>
+                <a href="#" class="face-header-sub-nav-item">管理</a>
+                <a href="#" class="face-header-sub-nav-item">审核</a>
+                <a href="#" class="face-header-sub-nav-item">部署</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/jquery@1.12.0/dist/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.face-header-navSwitch').on('click', function () {
+                $(this).closest('.face-header').toggleClass('face-header--nav-show')
+            })
+        })
+    </script>
+</body>
+</html>
