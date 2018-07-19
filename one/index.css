@@ -1282,7 +1282,6 @@ html .face-one-sidebar > ul > li {
 .markdown-body img {
   max-width: 100%;
   box-sizing: content-box;
-  background-color: #ffffff;
 }
 .markdown-body img[align=right] {
   padding-left: 20px;
