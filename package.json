@@ -3,6 +3,7 @@
         "dev": "fis3 release -d output -wL",
         "online": "rm -rf output && fis3 release online -d output",
         "gh": "node ./compile/deploy-gh.js",
+        "release": "npm run online && npm run gh",
         "s": "cd output && ../node_modules/serve/bin/serve.js -l 2000"
     },
     "devDependencies": {
