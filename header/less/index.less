@@ -1,4 +1,5 @@
 @import "./settings.less";
+@import "./sub.less";
 .@{face-header-prefix} {
     background-color: #525a6f;
     background: linear-gradient(#525a6f, #484f61, #484f61);
@@ -7,7 +8,7 @@
     &-inner {
         box-sizing: border-box;
         display: flex;
-        max-width: 1080px;
+        max-width: 1024px;
         margin-left: auto;
         margin-right: auto;
         &:after {
@@ -92,8 +93,9 @@
         &-item:hover,
         &-item--on {
             outline: none;
-            background-color: rgba(255,255,255,.15);
-            border-radius: .1em;
+            // background-color: rgba(255,255,255,.15);
+            // border-radius: .1em;
+            opacity: .8;
             &-icon {
 
             }

@@ -1,0 +1,23 @@
+@import "./settings.less";
+.@{face-header-prefix}-sub {
+    background-color: rgba(242,242,242,0.7);
+    border-bottom: 1px solid #ededed;
+    &-inner {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &-nav {
+        text-align: center;
+        &-item {
+            display: inline-block;
+            color:#666;
+            text-decoration: none;
+            padding:.5em;
+        }
+        &-item:hover,
+        &-item--on {
+            color:#4688f1;
+        }
+    }
+}
