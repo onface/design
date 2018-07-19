@@ -1,10 +1,12 @@
 {
     "scripts": {
         "dev": "fis3 release -d docs -wL",
+        "online": "fis3 release -d docs",
         "s": "cd docs && ../node_modules/serve/bin/serve.js -l 2000"
     },
     "devDependencies": {
         "fis-parser-less-2.x": "^0.1.4",
+        "fis3-hook-relative": "^2.0.3",
         "serve": "^9.2.0"
     }
 }

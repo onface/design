@@ -266,6 +266,10 @@ fis-parser-less-2.x@^0.1.4:
   dependencies:
     less "2.5.0"
 
+fis3-hook-relative@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.npmjs.org/fis3-hook-relative/-/fis3-hook-relative-2.0.3.tgz#f4b0efde7c7380f19c5b6e8530d547197bdbddd0"
+
 forever-agent@~0.6.1:
   version "0.6.1"
   resolved "https://registry.npmjs.org/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
