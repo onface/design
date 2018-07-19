@@ -1,3 +1,6 @@
+fis.match('compile/**', {
+    release: false
+})
 if (fis.project.currentMedia() !== 'dev') {
     fis.hook(require('fis3-hook-relative'))
     fis.match('**', {
