@@ -1,7 +1,7 @@
 {
     "scripts": {
-        "dev": "fis3 release -d docs -wL",
-        "online": "fis3 release -d docs",
+        "dev": "fis3 release -d output -wL",
+        "online": "rm -rf output && fis3 release -d output",
         "s": "cd docs && ../node_modules/serve/bin/serve.js -l 2000"
     },
     "devDependencies": {

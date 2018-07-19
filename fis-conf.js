@@ -1,7 +1,3 @@
-fis.set('project.ignore', ['node_modules/**', 'output/**', 'fis-conf.js', 'docs/**'])
-fis.match('/docs/**', {
-    release: false
-})
 if (fis.project.currentMedia() !== 'dev') {
     fis.hook(require('fis3-hook-relative'))
     fis.match('**', {
