@@ -74,14 +74,14 @@ if (document.getElementById('face-one-sidebar')) {
         if (!entries[0].isIntersecting) {
             return
         }
-        $('.markdown-sidebar-link--on').removeClass('markdown-sidebar-link--on')
-        $('.markdown-sidebar-link[href="#' + entries[0].target.id + '"]').addClass('markdown-sidebar-link--on')
+        jQuery('.markdown-sidebar-link--on').removeClass('markdown-sidebar-link--on')
+        jQuery('.markdown-sidebar-link[href="#' + entries[0].target.id + '"]').addClass('markdown-sidebar-link--on')
     })
-    $('.markdown-sidebar-link').on('click', function () {
-        $('.markdown-sidebar-link--on').removeClass('markdown-sidebar-link--on')
-        $(this).addClass('markdown-sidebar-link--on')
+    jQuery('.markdown-sidebar-link').on('click', function () {
+        jQuery('.markdown-sidebar-link--on').removeClass('markdown-sidebar-link--on')
+        jQuery(this).addClass('markdown-sidebar-link--on')
     })
-    $('#face-one-cnt h2').each(function () {
+    jQuery('#face-one-cnt h2').each(function () {
         intersectionObserver.observe(this)
     })
 }

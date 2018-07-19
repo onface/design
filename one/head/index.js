@@ -1,4 +1,4 @@
-$(function () {
+$(function ($) {
     var parentClass = '.face-one-head-nav'
     var toggleClass = "face-one-head-nav--open"
     $('.face-one-head-nav-switch').on('click', function () {
