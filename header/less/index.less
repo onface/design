@@ -5,6 +5,7 @@
     border-bottom:1px solid #222;
     color:white;
     &-inner {
+        box-sizing: border-box;
         display: flex;
         max-width: 1080px;
         margin-left: auto;
@@ -42,7 +43,32 @@
             text-decoration: none;
         }
     }
+    &-logo {
+        flex:initial;
+        padding-left: 1em;
+        margin-right: 1em;
+        text-align: center;
+        &-photo {
+            height: 2em;
+            vertical-align: middle;
+        }
+        &-title {
 
+        }
+    }
+    &-navSwitch {
+        cursor: pointer;
+        transform: scale(1.4);
+        opacity: .9;
+        display: none;
+        position: absolute;
+        left:0;top:0;
+        padding:.5em 1em;
+        line-height: 2em;
+        &-close {
+            display: none;
+        }
+    }
     &-nav {
         flex: auto;
         text-align: center;
@@ -73,18 +99,6 @@
             }
         }
     }
-    &-logo {
-        flex:initial;
-        padding-left: 1em;
-        margin-right: 1em;
-        &-photo {
-            height: 2em;
-            vertical-align: middle;
-        }
-        &-title {
-
-        }
-    }
     &-tool {
         flex:initial;
         padding-right: 1em;
@@ -92,6 +106,66 @@
         &-item {
             &-icon {
 
+            }
+        }
+    }
+}
+.@{face-header-prefix}--nav-show {
+    .@{face-header-prefix} {
+        &-navSwitch {
+            &-open {
+                display: none;
+            }
+            &-close {
+                display: block;
+            }
+        }
+        &-nav {
+            position: fixed;
+            top:3em;
+            left:0;right:0;bottom:0;
+            display: block;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .@{face-header-prefix} {
+        &-inner {
+            padding-left: 3em;
+            padding-right: 3em;
+        }
+        &-logo {
+            flex:auto;
+        }
+        &-navSwitch {
+            display: block;
+        }
+        &-nav {
+            display: none;
+            overflow-y: auto;
+            background-color: #484f61;
+            padding-left: 2em;
+            padding-right: 2em;
+            &-item {
+                line-height: 3em;
+                display: block;
+                border-bottom:1px dotted #aaa;
+            }
+            &-item:hover,
+            &-item--on {
+                background-color: transparent;
+            }
+        }
+        &-tool {
+            position: absolute;
+            right: 0;top:0;
+            &-item {
+                &-icon {
+                    opacity: .5;
+                }
+                &-label {
+                    display: none;
+                }
             }
         }
     }
