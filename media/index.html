@@ -7,72 +7,180 @@
     <title></title>
     <style>
     .item {
-        width: 33.3%;
-        float: left;
+        width:3em;
+        height: 3em;
+        display: inline-block;
         text-align: center;
-        padding-top: 1em;
-        padding-bottom: 1em;
+        margin-right: 1em;
+        margin-bottom: 1em;
         text-decoration: none;
+    }
+    .item img {
+        width: 100%;
     }
     </style>
 </head>
 <body>
 <script>
 var data = [
-    "logo.svg",
-    "activity.svg",
-    "browsers.svg",
-    "optimization.svg",
-    "ads.svg",
-    "buying.svg",
-    "promotion.svg",
-    "aim.svg",
-    "cogwheel.svg",
-    "rating.svg",
-    "analytics-1.svg",
-    "coin.svg",
-    "research.svg",
-    "analytics.svg",
-    "conversion.svg",
-    "search-1.svg",
-    "audience.svg",
-    "economy.svg",
-    "search.svg",
-    "bar-chart.svg",
-    "filter.svg",
-    "searching.svg",
-    "blog.svg",
-    "growth.svg",
-    "share.svg",
-    "browser-1.svg",
-    "keyword.svg",
-    "sitemap.svg",
-    "browser-2.svg",
-    "laptop.svg",
-    "smartphone.svg",
-    "browser-3.svg",
-    "line-chart.svg",
-    "speedometer.svg",
-    "browser-4.svg",
-    "stats.svg",
-    "browser-5.svg",
-    "loupe.svg",
-    "tag.svg",
-    "browser.svg",
-    "mailing.svg",
-    "update.svg",
-    "browsers-1.svg",
-    "online-shop-1.svg",
-    "user.svg",
-    "browsers-2.svg",
-    "online-shop.svg",
-    "views.svg",
-    "browsers-3.svg",
-    "optimization-1.svg",
-    "worldwide.svg"
+    "onface/logo.svg",
+    // http://iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&cid=1972
+    // @坏人一枚
+    // http://iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&cid=2971
+    "@可爱",
+    "cute/birthday.svg",
+    "cute/degree.svg",
+    "cute/medal.svg",
+    "cute/settings.svg",
+    "cute/watch.svg",
+    "cute/bug.svg",
+    "cute/dialogue.svg",
+    "cute/org.svg",
+    "cute/star.svg",
+    "cute/camera.svg",
+    "cute/edit.svg",
+    "cute/phone.svg",
+    "cute/user-female.svg",
+    "cute/chick.svg",
+    "cute/email.svg",
+    "cute/power.svg",
+    "cute/user-male.svg",
+    "cute/computer.svg",
+    "cute/location.svg",
+    "cute/project.svg",
+    "cute/voice.svg",
+    "@SEO",
+    "seo/activity.svg",
+    "seo/browsers.svg",
+    "seo/optimization.svg",
+    "seo/ads.svg",
+    "seo/buying.svg",
+    "seo/promotion.svg",
+    "seo/aim.svg",
+    "seo/cogwheel.svg",
+    "seo/rating.svg",
+    "seo/analytics-1.svg",
+    "seo/coin.svg",
+    "seo/research.svg",
+    "seo/analytics.svg",
+    "seo/conversion.svg",
+    "seo/search-1.svg",
+    "seo/audience.svg",
+    "seo/economy.svg",
+    "seo/search.svg",
+    "seo/bar-chart.svg",
+    "seo/filter.svg",
+    "seo/searching.svg",
+    "seo/blog.svg",
+    "seo/growth.svg",
+    "seo/share.svg",
+    "seo/browser-1.svg",
+    "seo/keyword.svg",
+    "seo/sitemap.svg",
+    "seo/browser-2.svg",
+    "seo/laptop.svg",
+    "seo/smartphone.svg",
+    "seo/browser-3.svg",
+    "seo/line-chart.svg",
+    "seo/speedometer.svg",
+    "seo/browser-4.svg",
+    "seo/stats.svg",
+    "seo/browser-5.svg",
+    "seo/loupe.svg",
+    "seo/tag.svg",
+    "seo/browser.svg",
+    "seo/mailing.svg",
+    "seo/update.svg",
+    "seo/browsers-1.svg",
+    "seo/online-shop-1.svg",
+    "seo/user.svg",
+    "seo/browsers-2.svg",
+    "seo/online-shop.svg",
+    "seo/views.svg",
+    "seo/browsers-3.svg",
+    "seo/optimization-1.svg",
+    "seo/worldwide.svg",
+    '@旅行',
+    // http://iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&cid=10914
+    // @Violayiqi
+    "travel/air-ticket.svg",
+    "travel/clock.svg",
+    "travel/hotel.svg",
+    "travel/present.svg",
+    "travel/trans.svg",
+    "travel/bag.svg",
+    "travel/expense.svg",
+    "travel/map.svg",
+    "travel/store.svg",
+    "travel/view.svg",
+    "travel/camera.svg",
+    "travel/food.svg",
+    "travel/note.svg",
+    "travel/strategy.svg",
+    "travel/visa.svg",
+    "travel/car.svg",
+    "travel/friend.svg",
+    "travel/play-park.svg",
+    "travel/ticket.svg",
+    "travel/weather.svg",
+    // http://iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&cid=10721
+    // @ BD-dogCMYK
+    '@3c',
+    "3c/camera.svg",
+    "3c/keyboard.svg",
+    "3c/router.svg",
+    "3c/cassette.svg",
+    "3c/line.svg",
+    "3c/sound-recorder.svg",
+    "3c/computer.svg",
+    "3c/memory.svg",
+    "3c/sound.svg",
+    "3c/drone.svg",
+    "3c/mouse.svg",
+    "3c/switch.svg",
+    "3c/earphone.svg",
+    "3c/phone.svg",
+    "3c/vr.svg",
+    "3c/hand-shank.svg",
+    "3c/power.svg",
+    "3c/watch.svg",
+    "3c/headset.svg",
+    "3c/robot.svg",
+    // http://iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&cid=10812
+    // @小鹿wyl
+    '@音乐',
+    "music/album.svg",
+    "music/file.svg",
+    "music/similarity.svg",
+    "music/clock.svg",
+    "music/mv.svg",
+    "music/singer.svg",
+    "music/collect.svg",
+    "music/next.svg",
+    "music/small-bell.svg",
+    "music/comment.svg",
+    "music/no-interest.svg",
+    "music/symbol.svg",
+    "music/download-done.svg",
+    "music/play.svg",
+    "music/tone-quality.svg",
+    "music/download.svg",
+    "music/restore.svg",
+    "music/transcribe.svg",
+    "music/dustbin.svg",
+    "music/ringtone.svg",
+    "music/upgrade.svg",
+    "music/edit.svg",
+    "music/share.svg",
+    "music/upload.svg"
 ]
 data.forEach(function (item) {
-    var url = './' + item
+    if (/@/.test(item)) {
+        document.write('<h2>' + item + '</h2>')
+        return
+    }
+    var path = __uri('./index.html').replace(/index\.html$/,'')
+    var url = path + item
     document.write('<a href="' + url +'" class="item" ><img src="' + url +'" /></a>')
 })
 </script>

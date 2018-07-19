@@ -112,24 +112,6 @@
         }
     }
 }
-.@{face-header-prefix}--nav-show {
-    .@{face-header-prefix} {
-        &-navSwitch {
-            &-open {
-                display: none;
-            }
-            &-close {
-                display: block;
-            }
-        }
-        &-nav {
-            position: fixed;
-            top:3em;
-            left:0;right:0;bottom:0;
-            display: block;
-        }
-    }
-}
 @media only screen and (max-width: 767px) {
     .@{face-header-prefix} {
         &-inner {
@@ -168,6 +150,24 @@
                 &-label {
                     display: none;
                 }
+            }
+        }
+    }
+    .@{face-header-prefix}--nav-show {
+        .@{face-header-prefix} {
+            &-navSwitch {
+                &-open {
+                    display: none;
+                }
+                &-close {
+                    display: block;
+                }
+            }
+            &-nav {
+                position: fixed;
+                top:3em;
+                left:0;right:0;bottom:0;
+                display: block;
             }
         }
     }
