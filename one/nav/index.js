@@ -1,4 +1,4 @@
-$(function () {
+$(function ($) {
     var parentClass = '.face-one-nav'
     var cntClass = '.face-one-nav-F-inner'
     var toggleClass = "face-one-nav--open"

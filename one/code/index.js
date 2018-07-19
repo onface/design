@@ -1,5 +1,5 @@
 __inline('../vendor/clipboard.js')
-$(function () {
+$(function ($) {
     $('.face-one-code-info-switchCode').on('click', function () {
         $(this).closest('.face-one-code').toggleClass('face-one-code--open')
     })
