@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css" />
+
+
+<title>文章</title>
+</head>
+<body>
+
+<div class="face-one-head">
+    <a class="face-one-head-logo" href="/">
+        <img src="./media/logo.svg" alt="" class="face-one-head-logo-photo">
+        <span class="face-one-head-logo-text">face</span>
+    </a>
+    <span class="face-one-head-slogan">
+        Write less code, do more things!
+    </span>
+    <!-- <div class="face-one-head-search">
+        <span class="face-one-head-search-icon fi fi-search"></span>
+        <input type="text" class="face-one-head-search-input" placeholder="搜索..." />
+    </div> -->
+    <div class="face-one-head-nav">
+        <span class="face-one-head-nav-switch fi fi-bars"></span>
+        <div class="face-one-head-nav-F-cnt">
+            <a href="/one/index.html" class="face-one-head-nav-link">首页</a>
+            <a href="/one/post.html" class="face-one-head-nav-link">指引</a>
+            <a href="/one/doc.html" class="face-one-head-nav-link">组件</a>
+            <!-- <select name="" class="face-one-head-nav-version">
+                <option value="0.0.1">0.0.1</option>
+            </select> -->
+            <a href="/one/doc.html" class="face-one-head-nav-lang">English</a>
+        </div>
+        <script>
+        Array.from(document.querySelectorAll('.face-one-head-nav-link')).forEach(function (node) {
+            var pathname = node.href.replace(/\?.*/, '')
+            if (pathname === location.origin + location.pathname) {
+                node.setAttribute('class', node.getAttribute('class') + ' ' + 'face-one-head-nav-link--on')
+            }
+        })
+        </script>
+    </div>
+</div>
+
+<div class="face-one-post markdown-body">
+    <h1>如何利用组件库最大化提高开发效率</h1>
+    <div style="text-align:center;" >
+        <img src="./media/laptop.svg" alt="">
+    </div>
+    <p>
+        设计同事基于 onface 的组件界面样式进行设计，前端基于 onface 提供的组件库实现样式。这种情况下设计同事不需要设计表单控件，但要考虑好合理组合表单控件，以提高用户体验。
+        <br />
+        例如：合理使用 <code>&lt;InputNumber&gt;</code>
+    </p>
+</div>
+<div class="face-one-foot">
+    <div class="face-one-foot-F-inner">
+        <div class="face-one-foot-group">
+            <div class="face-one-foot-group-title">
+                <span class="face-one-foot-group-title-icon fi fi-github"></span>
+                Github
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="https://onface.github.io/face.react" class="face-one-foot-group-item-link">face.react</a>
+                - 项目源码
+            </div>
+        </div>
+        <div class="face-one-foot-group">
+            <div class="face-one-foot-group-title">
+                <span class="face-one-foot-group-title-icon fi fi-link"></span>
+                相关站点
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="https://github.com/onface/react" class="face-one-foot-group-item-link">react</a>
+                - React 开源项目脚手架
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="http://onface.cc/" class="face-one-foot-group-item-link">onface.cc</a>
+                - 资源集合
+            </div>
+        </div>
+        <div class="face-one-foot-group">
+            <div class="face-one-foot-group-title">
+                <span class="face-one-foot-group-title-icon fi fi-team"></span>
+                社区
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="https://github.com/onface/face.react/issues" class="face-one-foot-group-item-link">Github issues</a>
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="https://github.com/onface/face.react/issues/new" class="face-one-foot-group-item-link">提交bug</a>
+            </div>
+        </div>
+        <div class="face-one-foot-copyright">
+            <a href="./doc.html" class="face-one-foot-copyright-title">
+                <img src="./media/logo.svg" alt="" class="face-one-foot-copyright-title-logo">
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="/face.js" ></script>
+
+</body>
+</html>
+
