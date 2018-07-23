@@ -1,0 +1,27 @@
+@import "./settings.less";
+.@{face-header-prefix}--themes-dark {
+    background-color: #525a6f;
+    background: linear-gradient(#525a6f, #484f61, #484f61);
+    border-bottom:1px solid #222;
+    .@{face-header-prefix}-tool,
+    .@{face-header-prefix}-nav {
+        &-item {
+            opacity: 1;
+            color:white;
+        }
+        &-item:hover,
+        &-item--active {
+            opacity: .8;
+        }
+    }
+    .@{face-header-prefix}-navSwitch {
+        color:#888;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .@{face-header-prefix}--themes-dark {
+        .@{face-header-prefix}-nav {
+            background-color: #484f61;
+        }
+    }
+}

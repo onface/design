@@ -1,0 +1,181 @@
+@import "./settings.less";
+.@{face-header-prefix} {
+    position: relative;
+    background-color: #f5f7fb;
+    background-image: none;
+    border-bottom:1px solid #e6e8f0;
+    color:white;
+    &-inner {
+        box-sizing: border-box;
+        display: flex;
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        &:after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+    }
+    &-logo,
+    &-nav,
+    &-tool {
+        padding-top: .5em;
+        padding-bottom: .5em;
+        &-item {
+            outline: none;
+            &-icon {
+                color:#c1cbda;
+            }
+            img&-icon {
+                height: 1.4em;
+                vertical-align: middle;
+                margin-top: -.2em;
+            }
+        }
+    }
+    &-nav,
+    &-tool {
+        line-height: 2em;
+        &-item {
+            margin-left: .2em;
+            margin-right: .2em;
+            color:inherit;
+            text-decoration: none;
+            color:#555;
+            opacity: .8;
+            text-shadow: none;
+        }
+    }
+    &-logo {
+        flex:initial;
+        padding-left: 1em;
+        margin-right: 1em;
+        text-align: center;
+        &-photo {
+            height: 2em;
+            vertical-align: middle;
+        }
+        &-title {
+
+        }
+    }
+    &-navSwitch {
+        cursor: pointer;
+        transform: scale(1.4);
+        opacity: .9;
+        display: none;
+        position: absolute;
+        left:0;top:0;
+        padding:.5em 1em;
+        line-height: 2em;
+        &-close {
+            display: none;
+        }
+    }
+    &-nav {
+        flex: auto;
+        text-align: center;
+        &-item {
+            outline: none;
+            padding-left: .5em;
+            padding-right: .5em;
+            margin-left: .3em;
+            margin-right: .3em;
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px solid transparent;
+            margin-bottom: -1px;
+            &-icon {
+
+            }
+        }
+        &-item:focus {
+            outline: none;
+        }
+        &-item:hover,
+        &-item--active {
+            outline: none;
+            // background-color: rgba(255,255,255,.15);
+            // border-radius: .1em;
+            opacity: .8;
+            &-icon {
+
+            }
+        }
+    }
+    &-tool {
+        position: relative;
+        flex:initial;
+        padding-right: 1em;
+        text-align: right;
+        &-item {
+            &-icon {
+
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .@{face-header-prefix} {
+        &-inner {
+            padding-left: 3em;
+            padding-right: 3em;
+        }
+        &-logo {
+            flex:auto;
+        }
+        &-navSwitch {
+            display: block;
+        }
+        &-nav {
+            display: none;
+            overflow-y: auto;
+            background-color: #f5f7fb;
+            padding-left: 2em;
+            padding-right: 2em;
+            &-item {
+                line-height: 3em;
+                display: block;
+                border-bottom:1px dotted #aaa;
+            }
+            &-item:hover,
+            &-item--active {
+                background-color: transparent;
+            }
+        }
+        &-tool {
+            position: absolute;
+            right: 0;top:0;
+            &-item {
+                &-icon {
+                    opacity: .5;
+                }
+                &-label {
+                    display: none;
+                }
+            }
+        }
+    }
+    .@{face-header-prefix}--nav-show {
+        .@{face-header-prefix} {
+            &-navSwitch {
+                &-open {
+                    display: none;
+                }
+                &-close {
+                    display: block;
+                }
+            }
+            &-nav {
+                position: fixed;
+                top:3em;
+                left:0;right:0;bottom:0;
+                display: block;
+                &-item--active {
+                    background-color: rgba(255,255,255, .1);
+                }
+            }
+        }
+    }
+}
