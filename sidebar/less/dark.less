@@ -1,0 +1,32 @@
+@import "./settings.less";
+.@{face-sidebar-prefix}--themes-dark {
+    background-color: #313131;
+    .@{face-sidebar-prefix}-nav {
+        &-item {
+            &-icon {
+                opacity: .9;
+            }
+            &-label {
+                color: #ccc;
+                text-shadow: 0px 1px 0px black;
+            }
+            &--active {
+                border-left-color: #4f565d;
+                background-color: #2d2d2d;
+            }
+            &:hover {
+                .@{face-sidebar-prefix}-nav-item--indicate {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .@{face-sidebar-prefix}-switch {
+        background-color: rgba(78, 75, 75, 0.5);
+        border-top:none;
+        color:#ddd;
+        &:hover {
+            color: white;
+        }
+    }
+}
