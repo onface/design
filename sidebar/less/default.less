@@ -1,7 +1,7 @@
 @import "./settings.less";
 .@{face-sidebar-prefix} {
-    background-color:#f5f7fb;
-    border-right:1px solid #e6e8f0;
+    background-color:#fbfcfe;
+    border-right:1px solid #e2ecf4;
     width: 15em;
     padding-bottom: 2.5em;
     color:#8d9198;
@@ -31,8 +31,8 @@
         font-size:1.2em;
         line-height: 2em;
         text-align: center;
-        background-color: rgba(255,255,255,.5);
-        border-top:1px solid #e6e8f0;
+        border-top: 1px solid #e6e9f0;
+        background-color: white;
         &-open {
             display: block;
         }
@@ -95,10 +95,12 @@
             }
         }
         &-item:hover {
-            color: #555;
+            color: #79A1EB;
+            background-color: rgba(236,242,252,0.25);
         }
-        &-item--active {
-            color: #555;
+        &-item--active,
+        &-item--active:hover {
+            color: #616367;
             border-left-color: #008afe;
             background-color: #e1edfa;
             .@{face-sidebar-prefix}-nav-item-icon {
