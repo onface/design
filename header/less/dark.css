@@ -1,0 +1,27 @@
+.face-header--themes-dark {
+  background-color: #525a6f;
+  background: linear-gradient(#525a6f, #484f61, #484f61);
+  border-bottom: 1px solid #222;
+}
+.face-header--themes-dark .face-header-tool-item,
+.face-header--themes-dark .face-header-nav-item {
+  opacity: 1;
+  color: white;
+}
+.face-header--themes-dark .face-header-tool-item:hover,
+.face-header--themes-dark .face-header-nav-item:hover,
+.face-header--themes-dark .face-header-tool-item--active,
+.face-header--themes-dark .face-header-nav-item--active {
+  opacity: .8;
+}
+.face-header--themes-dark .face-header-navSwitch {
+  color: #888;
+}
+.face-header--themes-dark .face-header-logo-title {
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  .face-header--themes-dark .face-header-nav {
+    background-color: #484f61;
+  }
+}

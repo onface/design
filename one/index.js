@@ -43,7 +43,7 @@ $(function ($) {
     })
 })
 
-!(function ($) {
+!(function () {
     function markrunSidebar(settings) {
         settings = settings || {}
         settings.content = settings.content || document.body
@@ -152,4 +152,5 @@ $(function ($) {
         })
     })
 })
+
 delete window.$

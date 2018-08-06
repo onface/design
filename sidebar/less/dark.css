@@ -1,0 +1,28 @@
+.face-sidebar--themes-dark {
+  background-color: #313131;
+}
+.face-sidebar--themes-dark .face-sidebar-nav-item-icon {
+  opacity: .9;
+}
+.face-sidebar--themes-dark .face-sidebar-nav-item-label {
+  color: #ccc;
+  text-shadow: 0px 1px 0px black;
+}
+.face-sidebar--themes-dark .face-sidebar-nav-item--active {
+  border-left-color: #4f565d;
+  background-color: #2d2d2d;
+}
+.face-sidebar--themes-dark .face-sidebar-nav-item:hover .face-sidebar-nav-item--indicate {
+  opacity: 1;
+}
+.face-sidebar--themes-dark .face-sidebar-nav-division {
+  background-color: #444;
+}
+.face-sidebar--themes-dark .face-sidebar-switch {
+  background-color: rgba(78, 75, 75, 0.5);
+  border-top: none;
+  color: #ddd;
+}
+.face-sidebar--themes-dark .face-sidebar-switch:hover {
+  color: white;
+}

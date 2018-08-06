@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sidebar</title>
+    <link rel="stylesheet" href="../element/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/face-icon@0.1.1/lib/index.css" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body style="padding-left:15em;" >
+     <div class="face-sidebar" style="position:fixed;left:0;top:0;bottom:0;" >
+         <a href="#" class="face-sidebar-logo">
+             <img src="../media/onface/logo.svg" alt="" class="face-sidebar-logo-photo" />
+         </a>
+         <div class="face-sidebar-switch">
+             <div class="face-sidebar-switch-open">
+                 <div class="fi fi-menu-fold"></div>
+             </div>
+             <div class="face-sidebar-switch-close">
+                 <div class="fi fi-menu-unfold"></div>
+             </div>
+         </div>
+         <div class="face-sidebar-nav">
+             <div class="face-sidebar-nav-item face-sidebar-nav-item--active">
+                 <img src="../media/nice/global.svg" alt="" class="face-sidebar-nav-item-icon">
+                 <span class="face-sidebar-nav-item-label">
+                     全球业务
+                 </span>
+             </div>
+             <div class="face-sidebar-nav-item">
+                 <img src="../media/nice/idea.svg" alt="" class="face-sidebar-nav-item-icon">
+                 <span class="face-sidebar-nav-item-label">
+                     创意中心
+                 </span>
+             </div>
+             <div class="face-sidebar-nav-division"></div>
+             <div class="face-sidebar-nav-more">
+                 <div class="face-sidebar-nav-item">
+                     <img src="../media/nice/male.svg" alt="" class="face-sidebar-nav-item-icon">
+                     <span class="face-sidebar-nav-item-label">
+                         客户管理
+                     </span>
+                     <span class="face-sidebar-nav-item-indicate"><span class="fi fi-right"></span>
+                 </div>
+                 <div class="face-sidebar-nav-item">
+                     <img src="../media/nice/line-chart.svg" alt="" class="face-sidebar-nav-item-icon">
+                     <span class="face-sidebar-nav-item-label">
+                         统计分析
+                     </span>
+                     <span class="face-sidebar-nav-item-indicate"><span class="fi fi-right"></span></span>
+                 </div>
+                 <div class="face-sidebar-nav-item">
+                     <img src="../media/nice/dev.svg" alt="" class="face-sidebar-nav-item-icon">
+                     <span class="face-sidebar-nav-item-label">
+                         API接口
+                     </span>
+                     <span class="face-sidebar-nav-item-indicate"><span class="fi fi-right"></span></span>
+                 </div>
+                 <div class="face-sidebar-nav-item">
+                     <img src="../media/nice/wallet.svg" alt="" class="face-sidebar-nav-item-icon">
+                     <span class="face-sidebar-nav-item-label">
+                         财务中心
+                     </span>
+                     <span class="face-sidebar-nav-item-indicate"><span class="fi fi-right"></span></span>
+                 </div>
+                 <div class="face-sidebar-nav-item">
+                     <img src="../media/nice/cooperation.svg" alt="" class="face-sidebar-nav-item-icon">
+                     <span class="face-sidebar-nav-item-label">
+                         合作伙伴
+                     </span>
+                     <span class="face-sidebar-nav-item-indicate"><span class="fi fi-right"></span></span>
+                 </div>
+                 <div class="face-sidebar-nav-item">
+                     <img src="../media/nice/email.svg" alt="" class="face-sidebar-nav-item-icon">
+                     <span class="face-sidebar-nav-item-label">
+                        站内消息
+                     </span>
+                     <span class="face-sidebar-nav-item-indicate"><span class="fi fi-right"></span></span>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+    <script src="https://unpkg.com/jquery@1.12.0/dist/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.face-sidebar-switch').on('click', function () {
+                $('.face-sidebar').toggleClass('face-sidebar--close')
+            })
+        })
+    </script>
+</body>
+</html>
