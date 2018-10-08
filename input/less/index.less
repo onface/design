@@ -1,0 +1,64 @@
+@import "./settings.less";
+.@{face-input-prefix} {
+    display: inline-block;
+    width: 11.45em;
+}
+.@{face-input-prefix}--focus {
+    .@{face-input-prefix}-inner{
+        border-color:@face-input-border-color--focus;
+        box-shadow: inset 0 .1em 0 @face-input-boxshow-inset-color, 0 0 .2em @face-input-boxshow-color--focus;
+    }
+    .@{face-input-prefix}-prefix,
+    .@{face-input-prefix}-suffix {
+        border-color: @face-input-border-color--focus;
+    }
+}
+.@{face-input-prefix}-inner {
+    display: flex;
+    border-radius: @face-input-border-radius;
+    border:1px solid @face-input-border-color;
+    box-shadow: inset 0 .1em 0 @face-input-boxshow-inset-color;
+    background-color: white;
+    color:@face-input-color;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.@{face-input-prefix}-control {
+    width: 100%;
+    flex: auto;
+}
+.@{face-input-prefix}-control-input {
+    color:@face-input-color;
+    padding:0 .5em;
+    font-size:1em;
+    line-height: 1.6;
+    display: inline-block;
+    box-sizing: border-box;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    &::placeholder {
+        color:@face-input-placeholder-color;
+    }
+}
+.@{face-input-prefix}-prefix,
+.@{face-input-prefix}-suffix {
+    flex: initial;
+    box-sizing: border-box;
+    display: block;
+    padding-left: .2em;
+    padding-right: .2em;
+    text-align: center;
+}
+.@{face-input-prefix}-prefix {
+    border-right:1px solid @face-input-border-color;
+    border-top-left-radius: @face-input-border-radius;
+    border-bottom-left-radius: @face-input-border-radius;
+    background-color: @face-input-prefix-bgcolor;
+}
+.@{face-input-prefix}-suffix {
+    border-bottom-left-radius: @face-input-border-radius;
+    border-left:1px solid @face-input-border-color;
+    border-top-right-radius: @face-input-border-radius;
+    border-bottom-right-radius: @face-input-border-radius;
+    background-color: @face-input-suffix-bgcolor;
+}

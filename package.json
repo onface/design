@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "dev": "fis3 release -d output -wL",
+        "dev": "fis3 release -d output -w --live",
         "online": "rm -rf output && fis3 release online -d output",
         "gh": "node ./compile/deploy-gh.js",
         "release": "npm run online && npm run gh",
