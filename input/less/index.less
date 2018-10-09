@@ -7,12 +7,26 @@
 .@{face-input-prefix}--textarea {
     width: auto;
 }
+.@{face-input-prefix}--contact-next {
+    margin-right: -1px;
+    .@{face-input-prefix}-inner {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+.@{face-input-prefix}--contact-prev {
+    .@{face-input-prefix}-inner {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
 .@{face-input-prefix}--full {
     width: 100%;
     .@{face-input-prefix}-control-textarea {
         width: 100%;
     }
 }
+.@{face-input-prefix}:hover,
 .@{face-input-prefix}--focus {
     .@{face-input-prefix}-inner{
         border-color:@face-input-border-color--focus;
@@ -21,6 +35,17 @@
     .@{face-input-prefix}-prefix,
     .@{face-input-prefix}-suffix {
         border-color: @face-input-border-color--focus;
+    }
+    z-index: 2;
+}
+.@{face-input-prefix}--error {
+    .@{face-input-prefix}-inner{
+        border-color:@face-input-border-color--error;
+        box-shadow: inset 0 .1em 0 @face-input-boxshow-inset-color, 0 0 .2em @face-input-boxshow-color--error;
+    }
+    .@{face-input-prefix}-prefix,
+    .@{face-input-prefix}-suffix {
+        border-color: @face-input-border-color--error;
     }
 }
 .@{face-input-prefix}-inner {
