@@ -1,15 +1,19 @@
 {
     "scripts": {
-        "dev": "fis3 release -d output -wL",
+        "dev": "fis3 release -d output -w --live",
         "online": "rm -rf output && fis3 release online -d output",
         "gh": "node ./compile/deploy-gh.js",
         "release": "npm run online && npm run gh",
-        "s": "cd output && ../node_modules/serve/bin/serve.js -l 2000"
+        "s": "node s.js"
     },
     "devDependencies": {
         "fis-parser-less-2.x": "^0.1.4",
         "fis3-hook-relative": "^2.0.3",
         "gh-pages": "^1.2.0",
         "serve": "^9.2.0"
+    },
+    "dependencies": {
+        "express": "^4.16.3",
+        "fis-livereload": "^0.1.0"
     }
 }
