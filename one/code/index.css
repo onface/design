@@ -4,6 +4,9 @@
   border-radius: .2em;
   margin-bottom: 1em;
 }
+.face-one-code-example {
+  padding: 1em;
+}
 .face-one-code-info {
   position: relative;
 }

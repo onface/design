@@ -188,7 +188,7 @@ img.face-header-tool-item-icon {
   padding: .5em;
 }
 .face-header-sub-nav-item:hover,
-.face-header-sub-nav-item--on {
+.face-header-sub-nav-item--active {
   color: #4688f1;
 }
 .face-header--themes-dark {
