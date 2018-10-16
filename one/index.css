@@ -1763,6 +1763,11 @@ a.face-one-feature-item .face-one-feature-item-label {
 .face-one-code-info-switchCode {
   background-color: rgba(246, 248, 254, 0.8);
 }
+.face-one-code-source-tool-preview img,
+.face-one-code-source-tool-copy img,
+.face-one-code-info-switchCode img {
+  height: 1.5em;
+}
 .face-one-code-source-tool-preview:hover,
 .face-one-code-source-tool-copy:hover,
 .face-one-code-info-switchCode:hover {
@@ -1777,12 +1782,12 @@ a.face-one-feature-item .face-one-feature-item-label {
   height: 100% !important;
 }
 .face-one-code--part .face-one-code-source {
-    display: block;
-    overflow: auto;
+  display: block;
+  overflow: auto;
 }
 .face-one-code--side.face-one-code--part .face-one-code-source {
-    display: block;
-    overflow: hidden;
+  display: block;
+  overflow: hidden;
 }
 .face-one-code-source {
   border-top: 1px dashed #ddd;
@@ -1822,6 +1827,9 @@ html .face-one-code-source-tool-copy {
   padding: 0;
   margin: 0;
   color: inherit;
+}
+.face-one-code-source-tool-preview-submit img {
+  height: 1.2em;
 }
 .face-one-code--size {
   position: relative;
