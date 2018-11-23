@@ -22,8 +22,6 @@
   font-weight: 600;
 }
 .face-one-code-info-desc {
-  padding: 1em;
-  padding-top: .4em;
   clear: both;
 }
 .face-one-code-info-desc p {
@@ -64,16 +62,12 @@
 }
 .face-one-code--side .face-one-code-info-switchCode {
   z-index: 10;
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
   width: 50%;
   position: absolute;
   right: 0;
-  bottom: 0;
-  color: #888;
+  bottom: 0px;
+  color: #337ab7;
   text-align: center;
-}
-.face-one-code--side .face-one-code-source {
-  display: block;
 }
 .face-one-code--side .face-one-code-F-view {
   float: left;
@@ -85,7 +79,9 @@
   top: 0;
   width: 50%;
   height: 100%;
-  overflow: auto;
+  border-top: none;
+  display: block;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 750px) {
   .face-one-code-info-switchCode {
@@ -108,11 +104,6 @@
     display: block;
   }
 }
-.face-one-code-source-tool-preview,
-.face-one-code-source-tool-copy,
-.face-one-code-info-switchCode {
-  background-color: rgba(246, 248, 254, 0.8);
-}
 .face-one-code-source-tool-preview img,
 .face-one-code-source-tool-copy img,
 .face-one-code-info-switchCode img {
@@ -133,19 +124,19 @@
 }
 .face-one-code--part .face-one-code-source {
   display: block;
-  overflow: auto;
 }
 .face-one-code--side.face-one-code--part .face-one-code-source {
   display: block;
-  overflow: hidden;
 }
 .face-one-code-source {
-  border-top: 1px dashed #ddd;
+  overflow: auto;
+  background-color: #f6f8fa;
 }
-.face-one-code-source > pre {
+.face-one-code .face-one-code-source > pre {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   margin-bottom: 0;
+  overflow: visible;
 }
 .face-one-code-source-tool {
   position: absolute;
@@ -227,7 +218,6 @@ html .face-one-code-source-tool-copy {
   top: 0;
   width: 50%;
   height: 100%;
-  overflow: auto;
 }
 @media screen and (max-width: 750px) {
   .face-one-code-info-switchCode {

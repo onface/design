@@ -407,6 +407,8 @@ table {
   padding-left: 2em;
   padding-right: 2em;
   margin-bottom: 2em;
+  background-color: #fafafa;
+  border-bottom: 1px solid #eee;
 }
 .face-one-head:after {
   content: ' ';
@@ -523,6 +525,13 @@ html .face-one-head-nav-switch {
 .face-one-head-search-input::placeholder {
   color: #ced4d9;
 }
+@media screen and (min-width: 750px) {
+  .face-one-head-inner {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (max-width: 750px) {
   .face-one-head-logo {
     min-width: auto;
@@ -577,11 +586,12 @@ html .face-one-head-nav-switch {
   transition: left .3s ease;
 }
 .face-one-nav-F-inner {
-  width: 16em;
+  width: 14em;
+  position: relative;
   height: 100%;
   background-color: white;
   color: #495057;
-  line-height: 2.8;
+  line-height: 2.4;
   box-sizing: border-box;
   transition: opacity .3s ease;
 }
@@ -629,7 +639,7 @@ html .face-one-nav-switch {
 .face-one-nav-item-label--on {
   background-color: #e6f7ff;
   color: #1890ff;
-  border-right: 2px solid #1890ff;
+  border-radius: .1em;
 }
 .face-one-nav-item-group {
   text-indent: 3em;
@@ -734,12 +744,12 @@ html .face-one-sidebar > ul > li {
 }
 .face-one-foot {
   position: relative;
-  box-shadow: 0 -2px 3px #f7f7f7;
+  background-color: #fafafa;
   border-top: 1px solid #eee;
   font-size: .8em;
-  padding-top: 2em;
+  padding-top: 1em;
   padding-bottom: 2em;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 .face-one-foot-F-inner {
   width: 1100px;
@@ -819,7 +829,7 @@ html .face-one-sidebar > ul > li {
 markrun {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  color: #314659;
+  color: #34495e;
   font-family: -apple-system, BlinkMacSystemFont, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
   word-wrap: break-word;
   /* * {
@@ -1011,7 +1021,8 @@ markrun h4,
 markrun h5,
 markrun h6 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0
+		color:#2c3e50;
 }
 markrun h1 {
   font-size: 32px;
@@ -1209,9 +1220,9 @@ markrun h6:hover .anchor .octicon-link {
 markrun h1 {
   padding-bottom: .3em;
   font-size: 2em;
-  border-bottom: 1px solid #eaecef;
 }
 markrun h2 {
+  margin-top: 2em;
   padding-bottom: .3em;
   font-size: 1.5em;
 }
@@ -1384,9 +1395,6 @@ markrun .task-list-item input {
 markrun hr {
   border-bottom-color: #eeeeee;
 }
-markrun h2 {
-  margin-top: .3em;
-}
 markrun h1 .markrun-anchor,
 markrun h2 .markrun-anchor,
 markrun h3 .markrun-anchor,
@@ -1394,6 +1402,13 @@ markrun h4 .markrun-anchor,
 markrun h5 .markrun-anchor,
 markrun h6 .markrun-anchor {
   display: none;
+  float: left;
+  margin-left: -3em;
+  position: relative;
+  left: 1em;
+  text-decoration: none;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 markrun h1:hover .markrun-anchor,
 markrun h2:hover .markrun-anchor,
@@ -1422,66 +1437,54 @@ markrun .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  color: #abb2bf;
-  background: #282c34;
+  background: #ffffff;
+}
+markrun .hljs,
+markrun .hljs-subst {
+  color: #000000;
+}
+markrun .hljs-string,
+markrun .hljs-meta,
+markrun .hljs-symbol,
+markrun .hljs-template-tag,
+markrun .hljs-template-variable,
+markrun .hljs-addition {
+  color: #756bb1;
 }
 markrun .hljs-comment,
 markrun .hljs-quote {
-  color: #5c6370;
-  font-style: italic;
+  color: #636363;
 }
-markrun .hljs-doctag,
-markrun .hljs-keyword,
-markrun .hljs-formula {
-  color: #c678dd;
-}
-markrun .hljs-section,
-markrun .hljs-name,
-markrun .hljs-selector-tag,
-markrun .hljs-deletion,
-markrun .hljs-subst {
-  color: #e06c75;
-}
-markrun .hljs-literal {
-  color: #56b6c2;
-}
-markrun .hljs-string,
+markrun .hljs-number,
 markrun .hljs-regexp,
-markrun .hljs-addition,
-markrun .hljs-attribute,
-markrun .hljs-meta-string {
-  color: #98c379;
-}
-markrun .hljs-built_in,
-markrun .hljs-class .hljs-title {
-  color: #e6c07b;
-}
-markrun .hljs-attr,
-markrun .hljs-variable,
-markrun .hljs-template-variable,
-markrun .hljs-type,
-markrun .hljs-selector-class,
-markrun .hljs-selector-attr,
-markrun .hljs-selector-pseudo,
-markrun .hljs-number {
-  color: #d19a66;
-}
-markrun .hljs-symbol,
+markrun .hljs-literal,
 markrun .hljs-bullet,
-markrun .hljs-link,
-markrun .hljs-meta,
+markrun .hljs-link {
+  color: #31a354;
+}
+markrun .hljs-deletion,
+markrun .hljs-variable {
+  color: #8888ff;
+}
+markrun .hljs-keyword,
+markrun .hljs-selector-tag,
+markrun .hljs-title,
+markrun .hljs-section,
+markrun .hljs-built_in,
+markrun .hljs-doctag,
+markrun .hljs-type,
+markrun .hljs-tag,
+markrun .hljs-name,
 markrun .hljs-selector-id,
-markrun .hljs-title {
-  color: #61aeee;
+markrun .hljs-selector-class,
+markrun .hljs-strong {
+  color: #3182bd;
 }
 markrun .hljs-emphasis {
   font-style: italic;
 }
-markrun .hljs-strong {
-  font-weight: bold;
-}
-markrun .hljs-link {
-  text-decoration: underline;
+markrun .hljs-attribute {
+  color: #e6550d;
 }
 .face-one-intro {
   width: 80%;
@@ -1622,7 +1625,6 @@ a.face-one-feature-item .face-one-feature-item-label {
   }
 }
 .face-one-layout {
-  width: 100%;
   height: 100%;
   color: #314659;
 }
@@ -1631,15 +1633,21 @@ a.face-one-feature-item .face-one-feature-item-label {
   float: left;
 }
 .face-one-layout-cnt {
-  padding-left: 15.9em;
-  padding-right: 10em;
+  padding-left: 13.9em;
   box-sizing: border-box;
   vertical-align: top;
-  border-left: 1px solid #eee;
 }
 .face-one-cnt {
+  position: relative;
+  z-index: 2;
   padding-left: 1em;
-  border-left: 1px solid #efefef;
+}
+@media screen and (min-width: 750px) {
+  .face-one-layout {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (max-width: 750px) {
   .face-one-layout-cnt {
@@ -1672,8 +1680,6 @@ a.face-one-feature-item .face-one-feature-item-label {
   font-weight: 600;
 }
 .face-one-code-info-desc {
-  padding: 1em;
-  padding-top: .4em;
   clear: both;
 }
 .face-one-code-info-desc p {
@@ -1714,16 +1720,12 @@ a.face-one-feature-item .face-one-feature-item-label {
 }
 .face-one-code--side .face-one-code-info-switchCode {
   z-index: 10;
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
   width: 50%;
   position: absolute;
   right: 0;
-  bottom: 0;
-  color: #888;
+  bottom: 0px;
+  color: #337ab7;
   text-align: center;
-}
-.face-one-code--side .face-one-code-source {
-  display: block;
 }
 .face-one-code--side .face-one-code-F-view {
   float: left;
@@ -1735,7 +1737,9 @@ a.face-one-feature-item .face-one-feature-item-label {
   top: 0;
   width: 50%;
   height: 100%;
-  overflow: auto;
+  border-top: none;
+  display: block;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 750px) {
   .face-one-code-info-switchCode {
@@ -1758,11 +1762,6 @@ a.face-one-feature-item .face-one-feature-item-label {
     display: block;
   }
 }
-.face-one-code-source-tool-preview,
-.face-one-code-source-tool-copy,
-.face-one-code-info-switchCode {
-  background-color: rgba(246, 248, 254, 0.8);
-}
 .face-one-code-source-tool-preview img,
 .face-one-code-source-tool-copy img,
 .face-one-code-info-switchCode img {
@@ -1783,19 +1782,19 @@ a.face-one-feature-item .face-one-feature-item-label {
 }
 .face-one-code--part .face-one-code-source {
   display: block;
-  overflow: auto;
 }
 .face-one-code--side.face-one-code--part .face-one-code-source {
   display: block;
-  overflow: hidden;
 }
 .face-one-code-source {
-  border-top: 1px dashed #ddd;
+  overflow: auto;
+  background-color: #f6f8fa;
 }
-.face-one-code-source > pre {
+.face-one-code .face-one-code-source > pre {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   margin-bottom: 0;
+  overflow: visible;
 }
 .face-one-code-source-tool {
   position: absolute;
@@ -1877,7 +1876,6 @@ html .face-one-code-source-tool-copy {
   top: 0;
   width: 50%;
   height: 100%;
-  overflow: auto;
 }
 @media screen and (max-width: 750px) {
   .face-one-code-info-switchCode {
